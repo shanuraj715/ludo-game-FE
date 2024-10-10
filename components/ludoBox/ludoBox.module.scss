@@ -1,0 +1,38 @@
+.mainBox {
+  width: 240px;
+  height: 240px;
+  position: relative;
+  border: solid 1px #888;
+  .mainBoxChild {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    .mainBoxCell {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: dotted 2px white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+    }
+  }
+
+  .image {
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 110px;
+      height: 110px;
+      filter: blur(1px);
+    }
+  }
+}
