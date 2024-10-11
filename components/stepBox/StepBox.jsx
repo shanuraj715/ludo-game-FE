@@ -51,7 +51,7 @@ function StepBox(props) {
                     <div
                         className={styles.stepCell}
                     >
-                        <StarFill style={{ color: COLORS.stop }} size={20} />
+                        <StarFill className={styles.stopCell} style={{ color: COLORS.stop }} size={20} />
                     </div>
                     <div
                         className={styles.stepCell}

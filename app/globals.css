@@ -1,3 +1,7 @@
+:root {
+  --borderColor: rgba(44, 58, 71, 0.4);
+}
+
 html,
 body {
   max-width: 100vw;

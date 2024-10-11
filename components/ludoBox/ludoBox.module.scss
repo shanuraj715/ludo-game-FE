@@ -11,14 +11,17 @@
     height: 100%;
     width: 100%;
     .mainBoxCell {
-      height: 50px;
-      width: 50px;
+      height: 45px;
+      width: 45px;
       border-radius: 50%;
       border: dotted 2px white;
       display: flex;
       align-items: center;
       justify-content: center;
       opacity: 0.8;
+      box-shadow: rgb(85, 91, 255) 0px 0px 0px 2px,
+        rgb(31, 193, 27) 0px 0px 0px 4px, rgb(255, 217, 19) 0px 0px 0px 6px,
+        rgb(255, 156, 85) 0px 0px 0px 7px, rgb(255, 85, 85) 0px 0px 0px 8px;
     }
   }
 
