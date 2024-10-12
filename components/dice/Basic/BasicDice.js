@@ -1,7 +1,8 @@
 'use client'
 import React, { useEffect, useState, useRef } from 'react';
 import './basicDice.scss';
-import { getRandomNumberInRange } from '@/utils/utils';
+import { getRandomNumberInRange, play } from '@/utils/utils';
+import { AUDIO_SRC } from '@/constants';
 
 const classes = [
     'show-front',
@@ -36,10 +37,11 @@ const ThreeDDice = ({
             return;
         }
         updateDiceRollingState(true);
+        play(AUDIO_SRC.rollingDice)
         intervalRef.current = setInterval(() => {
             countRef.current = countRef.current + 1;
             setRotationClass(classes[getRandomNumberInRange(1, 6)]);
-            if (countRef.current >= 8) {
+            if (countRef.current >= 4) {
                 countRef.current = 0
                 clearInterval(intervalRef.current);
                 setRotationClass(classes[number - 1]);
