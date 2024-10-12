@@ -21,3 +21,7 @@ export const COLORS = {
     winBox: 'rgba(44, 58, 71, 0.4)',
     stop: 'rgba(44, 58, 71, 0.6)'
 }
+
+export const AUDIO_SRC = {
+    rollingDice: '/audio/rolling-dice.mp3'
+}
