@@ -10,7 +10,7 @@ import dice2 from '../../assets/images/dice2.webp'
 import dice3 from '../../assets/images/dice3.webp'
 import dice4 from '../../assets/images/dice4.png'
 import BasicDice from '../../components/dice/Basic/BasicDice'
-import { getRandomNumberInRange, play } from '@/utils/utils'
+import { getRandomNumberInRange } from '@/utils/utils'
 
 function page() {
 
