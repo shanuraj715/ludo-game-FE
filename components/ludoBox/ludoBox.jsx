@@ -3,6 +3,7 @@ import styles from './ludoBox.module.scss'
 import { BOX_COLORS } from '@/constants'
 import { Star } from 'react-bootstrap-icons'
 import Image from 'next/image'
+import BasicToken from '@/components/tokens/BasicToken/BasicToken'
 
 function LudoBox(props) {
 
@@ -16,24 +17,27 @@ function LudoBox(props) {
             <div className={styles.mainBoxChild}>
                 <div
                     className={styles.mainBoxCell}
-                    style={{ backgroundColor: BOX_COLORS[box].default }}
+                    style={{ backgroundColor: BOX_COLORS[box].alpha }}
                 >
-                    {/* <Star size={40} style={{ color: BOX_COLORS[box].default }} /> */}
+                    <BasicToken box={box} />
                 </div>
                 <div
                     className={styles.mainBoxCell}
-                    style={{ backgroundColor: BOX_COLORS[box].default }}
+                    style={{ backgroundColor: BOX_COLORS[box].alpha }}
                 >
+                    <BasicToken box={box} />
                 </div>
                 <div
                     className={styles.mainBoxCell}
-                    style={{ backgroundColor: BOX_COLORS[box].default }}
+                    style={{ backgroundColor: BOX_COLORS[box].alpha }}
                 >
+                    <BasicToken box={box} />
                 </div>
                 <div
                     className={styles.mainBoxCell}
-                    style={{ backgroundColor: BOX_COLORS[box].default }}
+                    style={{ backgroundColor: BOX_COLORS[box].alpha }}
                 >
+                    <BasicToken box={box} />
                 </div>
             </div>
         </div>
